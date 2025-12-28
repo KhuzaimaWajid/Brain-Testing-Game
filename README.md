@@ -1,16 +1,60 @@
-# React + Vite
+# 🧠 Brain Training Suite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React mini-game app to train your brain with quick, focused exercises.  
+Includes memory, reaction time, pattern recognition, and focus tests – plus a
+dashboard to track your progress over time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Beautiful UI**
+  - Gradient background, glassmorphism cards, and iconography using Tailwind CSS
+  - Fully responsive layout (desktop & laptop friendly)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **4 Cognitive Mini-Games**
+  1. **Memory Sequence**
+     - Simon-style color grid
+     - Watch the sequence, then repeat it
+     - Level increases as you succeed
+  2. **Reaction Time**
+     - Wait for the screen to turn green and click as fast as you can
+     - 5 rounds per test
+     - Shows average and best reaction time
+  3. **Pattern Recognition**
+     - Match the target 3×3 pattern from four options
+     - 10 rounds per game
+     - Calculates accuracy percentage
+  4. **Focus Timer**
+     - Stay focused for a selected duration (30s / 60s / 90s)
+     - Avoid clicking moving red distractions
+     - Generates a Focus Score based on mistakes
 
-## Expanding the ESLint configuration
+- **Progress Dashboard**
+  - Stores history in `localStorage`
+  - Shows:
+    - Games played per mode
+    - Average score
+    - Best score
+    - Trend (improving / stable / needs practice)
+  - Recent activity list (last 10 sessions)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React + Vite
+- **Styling:** Tailwind CSS
+- **Icons:** [lucide-react](https://github.com/lucide-icons/lucide)
+- **State & Logic:** React hooks (`useState`, `useEffect`, `useRef`)
+- **Storage:** `localStorage` for game history
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/Brain-Testing-Game.git
+cd Brain-Testing-Game
