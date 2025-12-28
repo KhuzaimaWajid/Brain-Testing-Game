@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Inter", sans-serif;
+}
+
+body {
+  @apply min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900
+    text-slate-50 antialiased flex items-center justify-center;
+}
+
+#root {
+  @apply w-full;
+}
